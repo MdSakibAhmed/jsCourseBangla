@@ -9,7 +9,7 @@ lg = console.log;
 
 // Example
 
-var obj = { mis: 80, quduri: 89, mutta: 69 }
+/*var obj = { mis: 80, quduri: 89, mutta: 69 }
 
 lg(obj.mis)
 lg(obj['mis']);
@@ -53,6 +53,43 @@ if (JSON.stringify(obj2) === JSON.stringify(obj3)) {
 var c = 'ab';
 var d = 'ac';
 
-lg(c === d)
+// Iteret objects , for in loop , 'in' opetator
+
+var forIn ={
+    a : 20,
+    b : 10,
+    c : 30,
+    d : 40
+}
+// in operator
+lg('c' in forIn);
+
+// iterate object by for in loop
+
+for (var i in forIn) {
+    //lg(i)
+    lg( i + ':'+ forIn[i]);
+}*/
+
+// Object Methodes provided by javascript
+
+var obmet = {
+    i : 30,
+    o: 40,
+    p : 30
+}
+
+lg(Object.keys(obmet));
+
+lg(Object.values(obmet))
+
+lg(Object.entries(obmet))
+
+
+// Creat object from a object 
+
+obmet2 = Object.assign({}, obmet);
+obmet2.i = 50;
+lg(obmet2, obmet);
 
 
