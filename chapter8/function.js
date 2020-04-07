@@ -1,5 +1,5 @@
 var lg = console.log
-function functionName (){
+/*function functionName (){
     console.log('function loop is started')
 }
 for (var i = 0; i < 18; i++){
@@ -35,5 +35,28 @@ sum += arguments[i];
     }
     lg(sum)
 }
-test(12,4,5)
+test(12,4,5)*/
 
+
+
+// function return 
+
+function Person(email, Number) {
+    var email = email;
+    var Number = Number;
+    //lg(email, Number);
+    // return email + Number;
+    // you can also return output like a object just like this.
+    return {
+        email: email,
+        number: Number
+    }
+    // you can not write anything after writing return in function. so whatever you want to write in function is must be written before return.
+} 
+
+Person('sakibahmad99090@gmail.com', 1234757554
+)
+// you can not store a funuction in a var (so thate you use it for any purpose anywhere)  except you decleared returne in function. Indeed , Console.log does note returne anything 
+var Miye = Person;
+lg(Miye('sakibahmad99090@gmail.com', 1234757554
+))
