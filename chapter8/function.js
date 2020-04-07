@@ -60,3 +60,20 @@ Person('sakibahmad99090@gmail.com', 1234757554
 var Miye = Person;
 lg(Miye('sakibahmad99090@gmail.com', 1234757554
 ))
+
+// function expresion and anonimous function
+
+var bd = function (a,b) {
+    return a + b;
+    //lg(a+b)
+}
+lg(bd(12, 3));
+
+setTimeout(function () {
+    lg('I am a muslim person')
+},3000)
+
+
+f
+var dc = bd;
+lg(dc(34,45))
