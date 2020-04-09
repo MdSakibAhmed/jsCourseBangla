@@ -74,6 +74,23 @@ setTimeout(function () {
 },3000)
 
 
-f
+
 var dc = bd;
 lg(dc(34,45))
+
+// Inner Function 
+
+function something (great,name){
+    function getFirstName(){
+        if(name){
+            return name.split(' ')[0]
+        }else{
+            return ''
+        }
+    }
+    var messeege = great + ' ' + getFirstName()
+    lg(messeege)
+}  something('Good morning'  );
+
+// Function scoping 
+// if you decleared a var anywhere like if statement and for loop while loop  or globaly etc you will have acces on it from anywhere . But if you decleare a var in function you will have access only in this function or its childe function.But there is access in pareant function on its child function. 
