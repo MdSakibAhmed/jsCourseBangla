@@ -23,3 +23,27 @@ var tumi={
 }
 
 tumi.print()
+
+// There are two way of creating a class in js : 1 factory pattern 2 constrator pattarn;
+
+// Factory pattern 
+
+// var person = function (){}
+
+var Person = function (){
+    return {
+        name : 'name ',
+        age : 23,
+        status: function (){
+            console.log('He is no marriged')
+        }
+    }
+}
+
+var Person2 = Person();
+
+//console.log(Person2('salman', 23))
+console.log(Person()) // it outputs as a fucntion 
+
+Person2.status()
+console.log(Person2) // it outpts as a object . so there is no need to call it like function.
