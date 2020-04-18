@@ -5,7 +5,7 @@
 // The value of 'this' key word is not assined in creational passe but it is assigned in executional context. ' this' key word is will be assinged with 'undefined' in creational passe like varaible. It means that where you wirte this key word it will be assinged with of this property or window object . So if you call a methode in another object , 'this' key word associate with that methode is will not be with his own object but 'this' is will be assinged with the property you call the methode one. 
 
 // example
-
+var lg = console.log;
 var ami ={
     Date:2020,
     birthDay:1997,
@@ -39,6 +39,32 @@ var Person = function (){
         }
     }
 }
+var MyName = function (){
+    
+        this.name = 'name'
+        this.age = 'age'
+        this.status= function (){
+            console.log('He is no marriged')
+        
+    }
+}
+ var yourName = new MyName();
+ lg(MyName())// it exicutes undefined
+ lg( yourName  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var Person2 = Person();
 
@@ -47,3 +73,18 @@ console.log(Person()) // it outputs as a fucntion
 
 Person2.status()
 console.log(Person2) // it outpts as a object . so there is no need to call it like function.
+
+
+
+
+// Constractor Property
+
+var rashid =  new Object()
+rashid.a = 12
+lg(rashid)
+
+var rafid = new  String('salman');
+
+
+
+lg( 'my string is ' + rafid)
